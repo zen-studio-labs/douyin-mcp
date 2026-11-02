@@ -1,0 +1,25 @@
+# Douyin (抖音) MCP Server
+
+> Hosted remote MCP server for Douyin (抖音, often called Chinese TikTok) data: video search by keyword or hashtag, video details with MP4 links, comments, creator profiles with their posts, and Douyin Shop product search. Read-only. No Douyin account; users sign in with a free Apify account (OAuth) and pay per result.
+
+## Install
+
+- Server name: douyin
+- Transport: streamable HTTP
+- URL: https://mcp.apify.com/?tools=fetch-actor-details,get-actor-run,get-dataset-items,zen-studio/douyin-search-scraper,zen-studio/douyin-video-scraper,zen-studio/douyin-profile-scraper,zen-studio/douyin-comments-scraper,zen-studio/douyin-product-search-scraper
+- Auth: Apify OAuth in the user's browser; alternative header `Authorization: Bearer <APIFY_TOKEN>`
+- Claude Code plugin: `claude plugin marketplace add zen-studio-labs/douyin-mcp`, then `claude plugin install douyin@douyin-mcp`
+
+## Docs
+
+- [README](https://github.com/zen-studio-labs/douyin-mcp/blob/main/README.md): setup for every client, tools, pricing, FAQ
+- [README in Chinese](https://github.com/zen-studio-labs/douyin-mcp/blob/main/README.zh-CN.md)
+- [Skill](https://github.com/zen-studio-labs/douyin-mcp/blob/main/skills/douyin/SKILL.md): run flow, input recipes, tool chaining, field sets
+
+## Tools
+
+- zen-studio/douyin-search-scraper: videos for keywords or hashtags
+- zen-studio/douyin-video-scraper: video details from links or IDs, direct MP4 links, optional file saving
+- zen-studio/douyin-profile-scraper: creator profiles and their posts
+- zen-studio/douyin-comments-scraper: comments under videos, replies on paid plans
+- zen-studio/douyin-product-search-scraper: Douyin Shop products with price, monthly sales, shop and commission

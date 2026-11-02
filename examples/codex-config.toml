@@ -1,0 +1,6 @@
+# ~/.codex/config.toml
+# Sign in afterwards with: codex mcp login douyin
+[mcp_servers.douyin]
+url = "https://mcp.apify.com/?tools=fetch-actor-details,get-actor-run,get-dataset-items,zen-studio/douyin-search-scraper,zen-studio/douyin-video-scraper,zen-studio/douyin-profile-scraper,zen-studio/douyin-comments-scraper,zen-studio/douyin-product-search-scraper"
+# Token instead of sign-in: export APIFY_TOKEN and uncomment the next line.
+# bearer_token_env_var = "APIFY_TOKEN"

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.zen-studio-labs/douyin-mcp",
+  "title": "Douyin (抖音)",
+  "description": "Douyin (抖音, Chinese TikTok) video search, video details, comments, creators and shop products.",
+  "repository": {
+    "url": "https://github.com/zen-studio-labs/douyin-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,get-actor-run,get-dataset-items,zen-studio/douyin-search-scraper,zen-studio/douyin-video-scraper,zen-studio/douyin-profile-scraper,zen-studio/douyin-comments-scraper,zen-studio/douyin-product-search-scraper",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional when your client supports Apify OAuth sign-in. Otherwise 'Bearer <APIFY_TOKEN>'.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

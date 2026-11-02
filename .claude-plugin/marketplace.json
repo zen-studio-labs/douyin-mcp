@@ -1,0 +1,34 @@
+{
+  "name": "douyin-mcp",
+  "owner": {
+    "name": "Zen Studio",
+    "url": "https://github.com/zen-studio-labs"
+  },
+  "metadata": {
+    "description": "Douyin (抖音) tools and skill for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "douyin",
+      "source": "./",
+      "description": "Search Douyin (抖音) videos, read video details, comments and creator profiles, and find Douyin Shop products.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Zen Studio"
+      },
+      "homepage": "https://github.com/zen-studio-labs/douyin-mcp",
+      "license": "MIT",
+      "keywords": [
+        "douyin",
+        "抖音",
+        "chinese tiktok",
+        "tiktok china",
+        "short video",
+        "social media",
+        "china",
+        "mcp"
+      ],
+      "category": "data"
+    }
+  ]
+}
